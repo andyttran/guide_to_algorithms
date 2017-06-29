@@ -313,7 +313,7 @@ function afterTen(arr) {
 }
 
 // total = 1 + (N - 10) * (2 + 2 + 1) = 5N + 51
-// reduce down to O(1) or constant time complexity
+// reduce down to O(N) or Linear time complexity
 ```
 
 Notice how when the problem prints from index 11 to the end of the array, when the input gets larger, so does the amount of iterations in the while loop.  

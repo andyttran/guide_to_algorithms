@@ -356,7 +356,7 @@ function evens(arr){
 }
 
 ```
-The loop is a linear chunk of operations because there are a lineat amount of iterations and everything inside of it is constant.  A linear chunk is the largest out of the entire algorithm and therefore we have **O(N) time**.
+The loop is a linear chunk of operations because there are a linear amount of iterations and everything inside of it is constant.  A linear chunk is the largest out of the entire algorithm and therefore we have **O(N) time**.
 
 ---
 
@@ -402,7 +402,7 @@ Since there are two nested loops,  we multiply linear, linear, and constant toge
 
 ### 1h. Understand Complexity of Native Methods
 
-If your language has a native sorting method, do you know what happening behind the scenes? Take sure you take the time to research and look up what sorting method your language is using.  Then loop up the time and space complexity requirements of that sorting function.
+If your language has a native sorting method, do you know what happening behind the scenes? Be sure you take the time to research and look up what sorting method your language is using.  Then loop up the time and space complexity requirements of that sorting function.
 
 The native methods of your language have inherent time and space complexity that you need to understand. One good way you can learn more about the time and space complexity of these functions is to code some of them out yourself.
 

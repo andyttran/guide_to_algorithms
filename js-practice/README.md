@@ -1,0 +1,6 @@
+### JavaScript Prep
+* To get better with JavaScript, add more examples of recreating these functions.
+    * ex. `evens`, `evensFilter`, ...
+    * ex. `sum`, `sumLoop`, `sumLoopTwo`....
+* Test these functions using Benchmark to see how they stack up.
+

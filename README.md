@@ -36,7 +36,7 @@ But there is a structured approach to algorithms that will make your life easier
 Same with algorithms and data structures.  There is a structure to the topics that you can learn that will greatly improve your understanding if you progress through the algorithms. Here are the steps I suggest you follow:
 
 1. Learn to evaluate efficiency (complexity) of algorithms
-2. Develop a process for problem solving
+2. Develop a process for problem-solving
 3. Learn basic algorithm patterns
 4. Learn basic data structures
 5. Put into practice

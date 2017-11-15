@@ -47,7 +47,7 @@ Lets cover each one of those areas step by step.
 
 ## 1. Evaluating Efficiency
 
-Evaluating the efficiency of algorithms is the first step to really developing the ability solve challenging algorithms.  If you cannot measure the efficiency of an algorithm, how can one compare the scalability of one approach to another.
+Evaluating the efficiency of algorithms is the first step to really developing the ability solve challenging algorithms.  If you cannot measure the efficiency of an algorithm, how can one compare the scalability of one approach to another?
 
 So lets start with time and space complexity. 
 

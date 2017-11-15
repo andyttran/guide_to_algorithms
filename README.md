@@ -168,7 +168,7 @@ function printFirstLast(arr) {
 // total = 2 + 4 = 6
 ```
 
-The first print statement has an array access and then a printing to the console, so thats 2 operations. The second print statement involves: accessing the length, subtracting from the length, accessing the index, and printing to the console. Thats a total of 4 for the second print statement. 
+The first print statement has an array access and then a printing to the console, so that's 2 operations. The second print statement involves: accessing the length, subtracting from the length, accessing the index, and printing to the console. That's a total of 4 for the second print statement.
 
 In total there are 6 computations, we would say this is O(1) time complexity. Read the next section to find out why.
 

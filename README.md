@@ -194,7 +194,7 @@ So the time complexity for the function above is **O(1) or constant time**.
 
 What does O(1) time mean? Well it means the amount of operations the algorithm takes to execute as the input scales remains constant. This makes sense, because no matter how large the input array gets, the function ```printFirstLast``` will still take roughly the same time to execute.
 
-Lets get some more practice looking at the following 10 totals and reduce it to the magnitude order for Big-O. You may have to look up some power laws. Also check out [Big-O Cheetsheet](http://bigocheatsheet.com/) if you are unsure how logarithmic terms compare to other terms.
+Let's get some more practice looking at the following 10 totals and reduce it to the magnitude order for Big-O. You may have to look up some power laws. Also check out [Big-O Cheetsheet](http://bigocheatsheet.com/) if you are unsure how logarithmic terms compare to other terms.
 
 ```
 PROBLEM SET 1:
@@ -215,7 +215,7 @@ Reduce the following to it Big-O magnitude:
 
 ### 1e. Looping are Sometimes Linear but not Always
 
-**For Loops:** Lets explore looping more. Most of the time, when we loop through a collection that also happens to be an input, then we would consider the loop to be O(N).
+**For Loops:** Let's explore looping more. Most of the time, when we loop through a collection that also happens to be an input, then we would consider the loop to be O(N).
 
 **Q:** Determine the time complexity of this algorithm below:
 
@@ -233,7 +233,7 @@ You may have guessed that it is **linear** time or **O(N)**. And yes, that would
 
 ---
 
-To determine why the operations for a loop has a linear order magnitude. Lets explore it in more detail line by line. When there is a loop we have to multiply the operations inside the loop by the total number of iteration the loop runs.
+To determine why the operations for a loop has a linear order magnitude. Let's explore it in more detail line by line. When there is a loop we have to multiply the operations inside the loop by the total number of iteration the loop runs.
 
 ```javascript
 // print each item in the array.
@@ -266,7 +266,7 @@ function firstTen(arr) {
 }
 ```
 
-**A:** Lets explore the code line by line, keep in mind we have 
+**A:** Let's explore the code line by line, keep in mind we have
 
 
 ```javascript
@@ -284,7 +284,7 @@ function firstTen(arr) {
 // reduce down to O(1) or constant time complexity
 ```
 ---
-**While Loop continued:** Lets evaluate a slight variation of the previous problem.
+**While Loop continued:** Let's evaluate a slight variation of the previous problem.
 
 **Q:** Evaluate the following code for time complexity:
 
@@ -298,7 +298,7 @@ function afterTen(arr) {
 	}
 }
 ```
-**A:** Lets explore the code line by line, keep in mind we have 
+**A:** Let's explore the code line by line, keep in mind we have
 
 
 ```javascript
@@ -325,7 +325,7 @@ Analyzing line by line is good for when you are starting out. But you may quickl
 
 Knowing that lower order terms and coefficients will get dropped anyway, you can speed up your analysis by looking at **chunks** of code at a time, and evaluating based on **magnitude**. 
 
-Lets try this out on a few problems.
+Let's try this out on a few problems.
 
 ---
 **Q:** Evaluate the following prblem for time complexity:
@@ -342,7 +342,7 @@ function evens(arr){
 	return result;
 }
 ```
-**A:** Lets separate this into chunks and use magnitudes. 
+**A:** Let's separate this into chunks and use magnitudes.
 
 ```javascript
 // given an array of integers, return all the even items.
@@ -367,9 +367,9 @@ Be careful not to mistakenly assume that just because there are multiple ```for-
 * **nested loops multiply**
 * **un-nested loops add**
 
-Lets go over a few different examples and analyze problems to see how nested versus un-nested loops affect the overall complexity of the algorithm.
+Let's go over a few different examples and analyze problems to see how nested versus un-nested loops affect the overall complexity of the algorithm.
 
-**Nested Loop** Lets take a look at a problem with a nested loop:
+**Nested Loop** Let's take a look at a problem with a nested loop:
 
 ```javascript
 // print all values that have a matching pairs
@@ -383,7 +383,7 @@ function findPairs(arr) {
     }
 }
 ```
-The problem here has a nested loop, lets evaluate this algorithm for time complexity:
+The problem here has a nested loop, let's evaluate this algorithm for time complexity:
 
 ```javascript
 // print all values that have a matching pairs
@@ -520,7 +520,7 @@ The basic list of algorithm patterns will help you progress throughout the first
 
 ## 3. Learn Linear Data Structures
 
-* **Arrays and Dynamic Arrays:** Start here to learn more about arrays and dynamic arrays.  If you began your development journey learning Python, Ruby, or JavaScript, you may not have been exposed to primitive array data structures (continuous blocks of memory) because your language has abstracted the concept of arrays into a more powerful, more functional data structures. Lets jump back to the old times and find out what arrays really are under the hood.
+* **Arrays and Dynamic Arrays:** Start here to learn more about arrays and dynamic arrays.  If you began your development journey learning Python, Ruby, or JavaScript, you may not have been exposed to primitive array data structures (continuous blocks of memory) because your language has abstracted the concept of arrays into a more powerful, more functional data structures. Let's jump back to the old times and find out what arrays really are under the hood.
 	* 	[OpenMyMind - Arrays and Dynamic Arrays](http://algorithms.openmymind.net/structures/arrays.html)
 
 * **Linked Lists, Stacks, and Queues** These linear data structures are often neglected as data structures in Python, Ruby, and JavaScript because Lists and Arrays in these languages has combined their functionality.  It is still important to understand how they are constructed, and how to nagivate through these more limited functionality data structures. Often we are given constraints, learning to work with these constraints make us more aware ways to tackle a problem.  That starts with really understanding these linear data structues.

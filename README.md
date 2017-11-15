@@ -109,7 +109,7 @@ It can get tricky with different types of inputs, here are some of the input typ
 | Matrix		| Width and height of matrix|
 | Graph 		| Number of vertices and edges| 
 
-*Disclaimer: These are 'common' factors that scale.  Sometimes with particular problems there might be less obvious factors that scale.*
+*Disclaimer: These are 'common' factors that scale.  Sometimes with particular problems, there might be less obvious factors that scale.*
 
 
 ### 1b. Units of Time and Space

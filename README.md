@@ -43,7 +43,7 @@ Same with algorithms and data structures.  There is a structure to the topics th
 6. Start easy and progress harder
 7. Track and measure
 
-Lets cover each one of those areas step by step.
+Let's cover each one of those areas step by step.
 
 ## 1. Evaluating Efficiency
 

@@ -51,7 +51,7 @@ Evaluating the efficiency of algorithms is the first step to really developing t
 
 So lets start with time and space complexity. 
 
-**Time complexity** - measures the amount of computations  
+**Time complexity** - measures the number of computations  
 **Space complexity** - measures the amount of memory
 
 The amount of computations or memory required to solve the algorithm is measured relative to the input size as the input scales up. Remember, for both time and space complexity, we are measuring against the **size of the input**.

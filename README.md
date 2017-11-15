@@ -133,7 +133,7 @@ To help you begin to analyze for complexity you need to get a sense of what a un
 
 ### 1c. Analyze Line by Line
 
-When you are starting out, try evaluating the complexity line by line and determine the complexity for each line.  Then sum up the complexity of each line to get the total. 
+When you are starting out, try evaluating the complexity line by line and determine the complexity of each line.  Then sum up the complexity of each line to get the total.
 
 Let's start with time complexity for now.
 
@@ -188,7 +188,7 @@ This is because for Big-O analysis we only care about the largest order of magni
 1. 6 is the lowest (and only term) 
 2. 6 itself is a coefficient of the constant term, thus it gets reduced to 1. 
 
-So the time complexity for the function above is **O(1) or constant time**. 
+So the time complexity of the function above is **O(1) or constant time**.
 
 ---
 

@@ -1,0 +1,17 @@
+{
+  "name": "js-practice",
+  "version": "1.0.0",
+  "description": "Practice problems (and answers) for Outco algorithm guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "node solutions.js",
+    "watch": "watch 'npm run test -s ./'"
+  },
+  "author": "Thomas Greco",
+  "license": "ISC",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "tape": "^4.8.0",
+    "watch": "^1.0.2"
+  }
+}

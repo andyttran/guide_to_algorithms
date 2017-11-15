@@ -154,7 +154,7 @@ function printFirstLast(arr) {
 **A:**
 
 1. The length of the input array is scaling
-2. The first ```print``` statement has 2 operations and the second ```print``` statement has has 4 operations. Do you know why?
+2. The first ```print``` statement has 2 operations and the second ```print``` statement has 4 operations. Do you know why?
 
 Here is how we could mark the computations line by line:
 

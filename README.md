@@ -29,7 +29,7 @@ If you are missing some of the minimum requirements, then I recommend taking a r
 
 ## Strategy
 
-The strategy to develop your algorithm skills revolves around a few extremely important concepts that need to be repeated consistently.  They are: 1) acquiring **knowledge**, 2) **applying** concepts, and 3) **testing** one's understand of the concepts.  
+The strategy to develop your algorithm skills revolves around a few extremely important concepts that need to be repeated consistently.  They are: 1) acquiring **knowledge**, 2) **applying** concepts, and 3) **testing** one's understanding of the concepts.  
 
 But there is a structured approach to algorithms that will make your life easier to learn faster.  In math, you have prerequisites that you should take before taking a more advanced class.  These prerequisites are laid out in an organized fashion so you do not get overwhelmed skipping over foundational concepts before moving on.
 

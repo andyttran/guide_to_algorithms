@@ -58,7 +58,7 @@ The amount of computations or memory required to solve the algorithm is measured
 
 We use **Big-O notation** to measure time and space complexity. Big-O is a mathematical way to gauge the rate in which something grows. Big-O refers to the worse case scenario. That means, if we chose the worse possible input for the algorithm, how long would it take? There is a bunch more technical details on Big-O, how it is accessed in academia vs industry, but for now, we should wait for later to explore this topic more.
 
-Before we dive further into how to analyze for Big-O, lets focus on the input first. 
+Before we dive further into how to analyze for Big-O, let's focus on the input first.
 
 ### 1a. Determining What is Scaling
 When you are trying to access the time or space complexity of an algorithm, always ask yourself: *what about my input is scaling?*
@@ -80,7 +80,7 @@ function printInteger(num) {
 
 ---
 
-Lets try another problem:  
+Let's try another problem:  
 **Q:** For the following code below, what is scaling?
 
 ```javascript
@@ -135,7 +135,7 @@ To help you begin to analyze for complexity you need to get a sense of what a un
 
 When you are starting out, try evaluating the complexity line by line and determine the complexity for each line.  Then sum up the complexity of each line to get the total. 
 
-Lets start with time complexity for now. 
+Let's start with time complexity for now.
 
 ---
 **Q:** Answer these two questions for the code below:

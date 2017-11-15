@@ -56,7 +56,7 @@ So lets start with time and space complexity.
 
 The amount of computations or memory required to solve the algorithm is measured relative to the input size as the input scales up. Remember, for both time and space complexity, we are measuring against the **size of the input**.
 
-We use **Big-O notation** to measure time and space complexity. Big-O is a mathematical way to gauge the rate in which something grows. Big-O refers to the worse case scenario. That means, if we chose the worse possible input for the algorithm, how long would it take? There is a bunch more technical details on Big-O, how it is accessed in academia vs industry, but for now, we should wait for later to explore this topic more.
+We use **Big-O notation** to measure time and space complexity. Big-O is a mathematical way to gauge the rate at which something grows. Big-O refers to the worse case scenario. That means, if we chose the worse possible input for the algorithm, how long would it take? There is a bunch more technical details on Big-O, how it is accessed in academia vs industry, but for now, we should wait for later to explore this topic more.
 
 Before we dive further into how to analyze for Big-O, let's focus on the input first.
 

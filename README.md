@@ -426,7 +426,7 @@ Try rewritting some of the native methods yourself with these problems:
 
 ```
 PROBLEM SET 2:
-You are given an collection based on your language, write a few functions
+You are given a collection based on your language, write a few functions
 that perform operations on this collection. Determine with the time 
 complexity is for each solution.
 

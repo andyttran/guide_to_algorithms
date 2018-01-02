@@ -356,7 +356,7 @@ function evens(arr){
 }
 
 ```
-The loop is a linear chunk of operations because there are a lineat amount of iterations and everything inside of it is constant.  A linear chunk is the largest out of the entire algorithm and therefore we have **O(N) time**.
+The loop is a linear chunk of operations because there are a linear amount of iterations and everything inside of it is constant.  A linear chunk is the largest out of the entire algorithm and therefore we have **O(N) time**.
 
 ---
 

@@ -1,7 +1,7 @@
 # Intro to Algorithms
 
 ## Purpose
-The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who do not have not taken an introductory algorithms course or need a refresher on basic algorithm design. 
+The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who have not taken an introductory algorithms course or need a refresher on basic algorithm design. 
 
 *In addition, this guide will also prepare developers for the [Outco program](http://outco.io) and their admissions fundamentals check.*
 

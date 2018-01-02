@@ -362,7 +362,7 @@ The loop is a linear chunk of operations because there are a linear amount of it
 
 ### 1g. Nested vs Un-nested Loops
 
-Be careful not to mistakenly assume that just because there are multiple ```for-loops``` in an algorithm that that it is automatically quadratic O(N^2) complexity or more. The simple rule you should remember here is:
+Be careful not to mistakenly assume that just because there are multiple ```for-loops``` in an algorithm that it is automatically quadratic O(N^2) complexity or more. The simple rule you should remember here is:
 
 * **nested loops multiply**
 * **un-nested loops add**

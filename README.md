@@ -426,7 +426,9 @@ Try rewritting some of the native methods yourself with these problems:
 
 ```
 PROBLEM SET 2:
-You are given an collection based on your language, write a few functions that perform operations on this collection. Determine with the time complexity is for each solution.
+You are given an collection based on your language, write a few functions
+that perform operations on this collection. Determine with the time 
+complexity is for each solution.
 
 Based on your language, the collection will be in this format:
 JavaScript: Array

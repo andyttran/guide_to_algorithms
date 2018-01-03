@@ -475,7 +475,7 @@ Below are some common examples of algorithms and patterns that lead to different
 |Quadratic: O(N^2)| Nested loops | 
 |Polynomial: O(N^C)| Deeply nested loops|
 |Exponential: O(C^N)| Multiple-recursion | 
-|Factorial: O(!N)| Permutations |
+|Factorial: O(N!)| Permutations |
 
 
 ### 1j. Leveling Up on Complexity Analysis

@@ -486,7 +486,7 @@ Learn more by doing. Work to analyze problems and evaluate the code you have wri
 
 2. [Intro to Big-O Notation](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals/introduction-to-big-o-notation) by Rithm School
 
-3. [How to Calculate Big-O](https://justin.abrah.ms/computer-science/how-to-calculate-big-o.html) by Justin Abrah
+3. [How to Calculate Big-O](https://justin.abrah.ms/computer-science/how-to-calculate-big-o.html) by Justin Abrahms
 
 
 ## 2. Learn Basic Algorithm Patterns

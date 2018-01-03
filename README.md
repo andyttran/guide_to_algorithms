@@ -454,7 +454,7 @@ each character separated into its own separate item.
 
 ### 1i. Understand Complexity of Data Structure Methods
 
-For now go to this website: [Big-O Cheatsheet](http://bigocheatsheet.com/) and take a look through it. For sorting and data structures, it is important to take note of the *average* time complexity. The *average* case will be the commonly used if you are apply these sorting methods and data structures in a larger algorithm.
+For now go to this website: [Big-O Cheatsheet](http://bigocheatsheet.com/) and take a look through it. For sorting and data structures, it is important to take note of the *average* time complexity. The *average* case will be the commonly used if you apply these sorting methods and data structures in a larger algorithm.
 
 Why suddenly focus *average* if we have been focused on Big-O which is looking at the worse case senario? Its because when working on an algorithm that uses sorting/data structures methods, the worse case input for the entire algorithm typically does not coincide with the worse case input for the sorting/data structure methods.
 

@@ -328,7 +328,7 @@ Knowing that lower order terms and coefficients will get dropped anyway, you can
 Lets try this out on a few problems.
 
 ---
-**Q:** Evaluate the following prblem for time complexity:
+**Q:** Evaluate the following problem for time complexity:
 
 ```javascript
 // given an array of integers, return all the even items.

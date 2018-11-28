@@ -30,36 +30,36 @@ If you are missing some of the minimum requirements, then I recommend taking a r
 
 ## Strategy
 
-The strategy to develop your algorithm skills revolves around a few extremely important concepts that need to be repeated consistently.  They are: 1) acquiring **knowledge**, 2) **applying** concepts, and 3) **testing** one's understand of the concepts.  
+The strategy to develop your algorithm skills revolves around a few extremely important concepts that need to be repeated consistently.  They are: 1) acquiring **knowledge**, 2) **applying** concepts, and 3) **testing** one's understanding of the concepts.  
 
 But there is a structured approach to algorithms that will make your life easier to learn faster.  In math, you have prerequisites that you should take before taking a more advanced class.  These prerequisites are laid out in an organized fashion so you do not get overwhelmed skipping over foundational concepts before moving on.
 
 Same with algorithms and data structures.  There is a structure to the topics that you can learn that will greatly improve your understanding if you progress through the algorithms. Here are the steps I suggest you follow:
 
 1. Learn to evaluate efficiency (complexity) of algorithms
-2. Develop a process for problem solving
+2. Develop a process for problem-solving
 3. Learn basic algorithm patterns
 4. Learn basic data structures
 5. Put into practice
 6. Start easy and progress harder
 7. Track and measure
 
-Lets cover each one of those areas step by step.
+Let's cover each one of those areas step by step.
 
 ## 1. Evaluating Efficiency
 
-Evaluating the efficiency of algorithms is the first step to really developing the ability to solve challenging algorithms.  If you cannot measure the efficiency of an algorithm, how can you compare the scalability of one approach to another.
+Evaluating the efficiency of algorithms is the first step to really developing the ability solve challenging algorithms.  If you cannot measure the efficiency of an algorithm, how can one compare the scalability of one approach to another?
 
 So let's start with time and space complexity. 
 
-**Time complexity** - measures the amount of computations  
+**Time complexity** - measures the number of computations  
 **Space complexity** - measures the amount of memory
 
 The amount of computations or memory required to solve the algorithm is measured relative to the input size as the input scales up. Remember, for both time and space complexity, we are measuring against the **size of the input**.
 
-We use **Big-O notation** to measure time and space complexity. Big-O is a mathematical way to gauge the rate in which something grows. Big-O refers to the worse case scenario. That means, if we chose the worse possible input for the algorithm, how long would it take? There is a bunch more technical details on Big-O, how it is accessed in academia vs. industry, but for now, we should wait for later to explore this topic more.
+We use **Big-O notation** to measure time and space complexity. Big-O is a mathematical way to gauge the rate at which something grows. Big-O refers to the worse case scenario. That means, if we chose the worse possible input for the algorithm, how long would it take? There are many more technical details about Big-O and how it is accessed in academia compared to industry, but we should wait for later to explore this topic more.
 
-Before we dive further into how to analyze for Big-O, let's focus on the input first. 
+Before we dive further into how to analyze for Big-O, let's focus on the input first.
 
 ### 1a. Determining What is Scaling
 When you are trying to access the time or space complexity of an algorithm, always ask yourself: *what about my input is scaling?*
@@ -110,7 +110,7 @@ It can get tricky with different types of inputs. Here are some of the input typ
 | Matrix		| Width and height of matrix|
 | Graph 		| Number of vertices and edges|
 
-*Disclaimer: These are 'common' factors that scale.  Sometimes with particular problems there might be less obvious factors that scale.*
+*Disclaimer: These are 'common' factors that scale.  Sometimes with particular problems, there might be less obvious factors that scale.*
 
 
 ### 1b. Units of Time and Space
@@ -134,9 +134,9 @@ To help you begin to analyze for complexity you need to get a sense of what a un
 
 ### 1c. Analyze Line by Line
 
-When you are starting out, try evaluating the complexity line by line and determine the complexity for each line.  Then sum up the complexity of each line to get the total.
+When you are starting out, try evaluating the complexity line by line and determine the complexity of each line.  Then sum up the complexity of each line to get the total.
 
-Let's start with time complexity for now. 
+Let's start with time complexity for now.
 
 ---
 **Q:** Answer these two questions for the code below:
@@ -155,7 +155,7 @@ function printFirstLast(arr) {
 **A:**
 
 1. The length of the input array is scaling
-2. The first ```print``` statement has 2 operations and the second ```print``` statement has has 4 operations. Do you know why?
+2. The first ```print``` statement has 2 operations and the second ```print``` statement has 4 operations. Do you know why?
 
 Here is how we could mark the computations line by line:
 
@@ -169,7 +169,7 @@ function printFirstLast(arr) {
 // total = 2 + 4 = 6
 ```
 
-The first print statement has an array access and then a printing to the console, so that's 2 operations. The second print statement involves: accessing the length, subtracting from the length, accessing the index, and printing to the console. That's a total of 4 for the second print statement. 
+The first print statement has an array access and then prints to the console, so that's 2 operations. The second print statement involves: accessing the length, subtracting from the length, accessing the index, and printing to the console. That's a total of 4 for the second print statement.
 
 In total there are 6 computations, we would say this is O(1) time complexity. Read the next section to find out why.
 
@@ -189,7 +189,7 @@ This is because for Big-O analysis we only care about the largest order of magni
 1. 6 is the lowest (and only term)
 2. 6 itself is a coefficient of the constant term, thus it gets reduced to 1.
 
-So the time complexity for the function above is **O(1) or constant time**.
+So the time complexity of the function above is **O(1) or constant time**.
 
 ---
 
@@ -267,7 +267,7 @@ function firstTen(arr) {
 }
 ```
 
-**A:** Let's explore the code line by line, keep in mind we have 
+**A:** Let's explore the code line by line, keep in mind we have
 
 
 ```javascript
@@ -300,7 +300,7 @@ function afterTen(arr) {
 }
 ```
 
-**A:** Let's explore the code line by line, keep in mind we have:
+**A:** Let's explore the code line by line, keep in mind we have
 
 
 ```javascript
@@ -345,7 +345,7 @@ function evens(arr){
 }
 ```
 
-**A:** Let's separate this into chunks and use magnitudes. 
+**A:** Let's separate this into chunks and use magnitudes.
 
 ```javascript
 // given an array of integers, return all the even items.
@@ -387,7 +387,7 @@ function findPairs(arr) {
 }
 ```
 
-The problem here has a nested loop. Let's evaluate this algorithm for time complexity:
+The problem here has a nested loop, let's evaluate this algorithm for time complexity:
 
 ```javascript
 // print all values that have a matching pairs

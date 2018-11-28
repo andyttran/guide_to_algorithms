@@ -406,7 +406,7 @@ Since there are two nested loops,  we multiply linear, linear, and constant toge
 
 ### 1h. Understand Complexity of Native Methods
 
-If your language has a native sorting method, do you know what happening behind the scenes? Make sure you take the time to research and look up what sorting method your language is using.  Then look up the time and space complexity requirements of that sorting function.
+If your language has a native sorting method, do you know what happening behind the scenes? Make sure you take the time to research and look up what sorting method your language is using.  Then loop up the time and space complexity requirements of that sorting function.
 
 The native methods of your language have inherent time and space complexity that you need to understand. One good way you can learn more about the time and space complexity of these functions is to code some of them out yourself.
 
@@ -430,7 +430,9 @@ Try rewriting some of the native methods yourself with these problems:
 
 ```
 PROBLEM SET 2:
-You are given an collection based on your language, write a few functions that perform operations on this collection. Determine with the time complexity is for each solution.
+You are given a collection based on your language, write a few functions
+that perform operations on this collection. Determine what the time 
+complexity is for each solution.
 
 Based on your language, the collection will be in this format:
 JavaScript: Array
@@ -456,7 +458,7 @@ each character separated into its own separate item.
 
 ### 1i. Understand Complexity of Data Structure Methods
 
-For now go to this website: [Big-O Cheatsheet](http://bigocheatsheet.com/) and take a look through it. For sorting and data structures, it is important to take note of the *average* time complexity. The *average* case will be the commonly used if you are apply these sorting methods and data structures in a larger algorithm.
+For now go to this website: [Big-O Cheatsheet](http://bigocheatsheet.com/) and take a look through it. For sorting and data structures, it is important to take note of the *average* time complexity. The *average* case will be the commonly used if you apply these sorting methods and data structures in a larger algorithm.
 
 Why suddenly focus *average* if we have been focused on Big-O which is looking at the worse case senario? Its because when working on an algorithm that uses sorting/data structures methods, the worse case input for the entire algorithm typically does not coincide with the worse case input for the sorting/data structure methods.
 
@@ -476,8 +478,8 @@ Below are some common examples of algorithms and patterns that lead to different
 |Quasilinear: O(Nlog(N))| Quicksort, mergesort, heapsort|
 |Quadratic: O(N^2)| Nested loops |
 |Polynomial: O(N^C)| Deeply nested loops|
-|Exponential: O(C^N)| Multiple-recursion |
-|Factorial: O(!N)| Permutations |
+|Exponential: O(C^N)| Multiple-recursion | 
+|Factorial: O(N!)| Permutations |
 
 
 ### 1j. Leveling Up on Complexity Analysis
@@ -488,7 +490,7 @@ Learn more by doing. Work to analyze problems and evaluate the code you have wri
 
 2. [Intro to Big-O Notation](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals/introduction-to-big-o-notation) by Rithm School
 
-3. [How to Calculate Big-O](https://justin.abrah.ms/computer-science/how-to-calculate-big-o.html) by Justin Abrah
+3. [How to Calculate Big-O](https://justin.abrah.ms/computer-science/how-to-calculate-big-o.html) by Justin Abrahms
 
 
 ## 2. Learn Basic Algorithm Patterns

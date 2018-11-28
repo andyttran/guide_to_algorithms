@@ -2,10 +2,10 @@
   "name": "js-practice",
   "version": "1.0.0",
   "description": "Practice problems (and answers) for Outco algorithm guide",
-  "main": "index.js",
   "scripts": {
-    "test": "node solutions.js",
-    "watch": "watch 'npm run test -s ./'"
+    "start": "npm run watch",
+    "test": "node index.js",
+    "watch": "watch 'npm run test -s ./*.js'"
   },
   "author": "Thomas Greco",
   "license": "ISC",

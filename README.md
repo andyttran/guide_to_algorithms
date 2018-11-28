@@ -1,7 +1,8 @@
 # Intro to Algorithms
 
 ## Purpose
-The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who do not have not taken an introductory algorithms course or need a refresher on basic algorithm design.
+
+The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who have not taken an introductory algorithms course or need a refresher on basic algorithm design. 
 
 *In addition, this guide will also prepare developers for the [Outco program](http://outco.io) and their admissions fundamentals check.*
 
@@ -9,8 +10,8 @@ The main goal of this guide is to get developers started with algorithms.  This 
 This guide can take between **25-100 hours** to complete depending on your exposure to algorithms.  Please allow for ample time to practice up to **2-4 weeks** to allow the concepts to be internalized. It is best to follow through with the recommended structure in the order given.
 
 **Minimum Requirements**:
-
-* Fluency in a programming language (e.g., Java, JavaScript, Python, Ruby, PHP, Objective-C, C++, C)
+ 
+* Fluency in a programming language (e.g., Java, JavaScript, Python, Ruby, PHP, Swift, Objective-C, C++, C)
 * Strong knowledge of looping constructs like `for` and `while` loops.
 * Strong knowledge of control flow `if`, `else`, `and`, `or`
 * Array: lookup, insertion, looping
@@ -135,7 +136,7 @@ To help you begin to analyze for complexity you need to get a sense of what a un
 
 When you are starting out, try evaluating the complexity line by line and determine the complexity for each line.  Then sum up the complexity of each line to get the total.
 
-Lets start with time complexity for now.
+Let's start with time complexity for now. 
 
 ---
 **Q:** Answer these two questions for the code below:
@@ -194,7 +195,7 @@ So the time complexity for the function above is **O(1) or constant time**.
 
 What does O(1) time mean? Well, it means the amount of operations the algorithm takes to execute as the input scales remains constant. This makes sense, because no matter how large the input array gets, the function ```printFirstLast``` will still take roughly the same time to execute.
 
-Let's get some more practice looking at the following 10 totals and reduce them to the magnitude order for Big-O. You may have to look up some power laws. Also check out [Big-O Cheetsheet](http://bigocheatsheet.com/) if you are unsure how logarithmic terms compare to other terms.
+Let's get some more practice looking at the following 10 totals and reduce it to the magnitude order for Big-O. You may have to look up some power laws. Also check out [Big-O Cheetsheet](http://bigocheatsheet.com/) if you are unsure how logarithmic terms compare to other terms.
 
 ```
 PROBLEM SET 1:
@@ -233,7 +234,7 @@ You may have guessed that it is **linear** time or **O(N)**. And yes, that would
 
 ---
 
-To determine why the operations for a loop have a linear order magnitude, let's explore it in more detail line by line. When there is a loop, we have to multiply the operations inside the loop by the total number of iteration the loop runs.
+To determine why the operations for a loop has a linear order magnitude. Let's explore it in more detail line by line. When there is a loop we have to multiply the operations inside the loop by the total number of iteration the loop runs.
 
 ```javascript
 // print each item in the array.
@@ -266,7 +267,7 @@ function firstTen(arr) {
 }
 ```
 
-**A:** Lets explore the code line by line, keep in mind we have
+**A:** Let's explore the code line by line, keep in mind we have 
 
 
 ```javascript
@@ -385,6 +386,7 @@ function findPairs(arr) {
     }
 }
 ```
+
 The problem here has a nested loop. Let's evaluate this algorithm for time complexity:
 
 ```javascript
@@ -522,7 +524,7 @@ The basic list of algorithm patterns will help you progress throughout the first
 
 ## 3. Learn Linear Data Structures
 
-* **Arrays and Dynamic Arrays:** Start here to learn more about arrays and dynamic arrays.  If you began your development journey learning Python, Ruby, or JavaScript, you may not have been exposed to primitive array data structures (continuous blocks of memory) because your language has abstracted the concept of arrays into a more powerful, more functional data structures. Lets jump back to the old times and find out what arrays really are under the hood.
+* **Arrays and Dynamic Arrays:** Start here to learn more about arrays and dynamic arrays.  If you began your development journey learning Python, Ruby, or JavaScript, you may not have been exposed to primitive array data structures (continuous blocks of memory) because your language has abstracted the concept of arrays into a more powerful, more functional data structures. Let's jump back to the old times and find out what arrays really are under the hood.
 	* 	[OpenMyMind - Arrays and Dynamic Arrays](http://algorithms.openmymind.net/structures/arrays.html)
 
 * **Linked Lists, Stacks, and Queues** These linear data structures are often neglected as data structures in Python, Ruby, and JavaScript because Lists and Arrays in these languages has combined their functionality.  It is still important to understand how they are constructed, and how to nagivate through these more limited functionality data structures. Often we are given constraints, learning to work with these constraints make us more aware ways to tackle a problem.  That starts with really understanding these linear data structues.

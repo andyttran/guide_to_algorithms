@@ -653,5 +653,5 @@ Reduce the following to it Big-O magnitude:
 7) nlog(n) + 3n^2			// O(n^2)
 8) n^3 + log(n^4)			// O(n^3)
 9) n! + 180000n^2 			// O(n!)
-10) 300n^5 + 15002^n + 3n	// O(n^5)
+10) 300n^5 + 15002^n + 3n	// O(15002^n)
 ```

@@ -499,7 +499,7 @@ The basic list of algorithm patterns will help you progress throughout the first
 
 
 * **Linear Search:** The most basic search there is, this is a starting point to understand searching.
-	* [Open My Mind - Implementation](http://algorithms.openmymind.net/search/linear.html)
+	* [Open My Mind - Implementation](https://github.com/karlseguin/Algorithms/blob/gh-pages/_posts/2012-5-16-LinearSearch.html)
 
 * **Multiple Pointers:** Looping and using multiple pointers that start at different positions and sometimes travel at different speeds are important to ensure you can strengthen your looping game.
 	* [Outco - Reading on Multiple Pointers](http://class.outco.io/courses/technical/lectures/1950839)
@@ -508,13 +508,13 @@ The basic list of algorithm patterns will help you progress throughout the first
 	* [Outco - Reading on Frequency Count](http://class.outco.io/courses/technical/lectures/2025015)
 * **Decrease and Conquer:** Its cousin to the more popular Divide and Conquer algorithm, these class of problems are important because they can be solved easily without recursion. It uses a single subproblem which can be solved with a while loop.  As we begin on recursion later, converting these decrease and conquer problems to single recursion problems will help strengthen your understanding of recursion.
 	* [Outco - Reading on Decrease & Conquer](http://class.outco.io/courses/technical/lectures/2067856)
-	* [OpenMyMind - Binary Search](http://algorithms.openmymind.net/search/binarysearch.html)
+	* [OpenMyMind - Binary Search](https://github.com/karlseguin/Algorithms/blob/gh-pages/_posts/2012-5-15-binarysearch.html)
 
 * **Basic Sorting:** Insertion, Selection, and Bubble sort are basic sorts tha have O(N^2 ) time complexity.  Understanding that there are often many ways to solve the same problem, and looking at the advantages and disadvantages of them allows us to start making better algorithm design decisions.
 	* [Youtube - Visualize Bubble and Insertion Sort](https://www.youtube.com/watch?v=WaNLJf8xzC4&t=114s)
 	* [Khan Academy - Selection, Insertion](https://www.khanacademy.org/computing/computer-science/algorithms#sorting-algorithms)
-	* [OpenMyMind - Bubble Sort](http://algorithms.openmymind.net/sort/bubblesort.html)
-	* [OpenMyMind - Insertion Sort](http://algorithms.openmymind.net/sort/insertionsort.html)
+	* [OpenMyMind - Bubble Sort](https://github.com/karlseguin/Algorithms/blob/gh-pages/_posts/2012-5-15-bubblesort.html)
+	* [OpenMyMind - Insertion Sort](https://github.com/karlseguin/Algorithms/blob/gh-pages/_posts/2012-5-15-insertionsort.html)
 	* [Visualgo - Visualize Sorting Algorithms](https://visualgo.net/sorting)
 
 * **Recursion** Finally, getting to recursion which can be a tough hump to get over for thosejust starting out.  We recommend using the Helper Method Recursion pattern which uses a helper method to actually do the recursion. One way to start is to replace simple loops with recursion. We will be posting simpler problems for you to start off soon.
@@ -527,7 +527,7 @@ The basic list of algorithm patterns will help you progress throughout the first
 ## 3. Learn Linear Data Structures
 
 * **Arrays and Dynamic Arrays:** Start here to learn more about arrays and dynamic arrays.  If you began your development journey learning Python, Ruby, or JavaScript, you may not have been exposed to primitive array data structures (continuous blocks of memory) because your language has abstracted the concept of arrays into a more powerful, more functional data structures. Let's jump back to the old times and find out what arrays really are under the hood.
-	* 	[OpenMyMind - Arrays and Dynamic Arrays](http://algorithms.openmymind.net/structures/arrays.html)
+	* 	[OpenMyMind - Arrays and Dynamic Arrays](https://github.com/karlseguin/Algorithms/blob/gh-pages/_posts/2012-5-16-Arrays.html)
 
 * **Linked Lists, Stacks, and Queues** These linear data structures are often neglected as data structures in Python, Ruby, and JavaScript because Lists and Arrays in these languages has combined their functionality.  It is still important to understand how they are constructed, and how to nagivate through these more limited functionality data structures. Often we are given constraints, learning to work with these constraints make us more aware ways to tackle a problem.  That starts with really understanding these linear data structues.
 	* [MyCodeSchool - LinkedList](https://www.youtube.com/watch?v=NobHlGUjV3g&t)
@@ -650,14 +650,14 @@ Algorithms is not something you learn overnight, it takes practice and consisten
 SOLUTIONS TO PROBLEM SET 1:
 Reduce the following to it Big-O magnitude:
 
-1) 5 + n 					// O(N)
-2) n + n^2					// O(n^2)
-3) 15n + 13n				// O(n)
-4) 10000					// O(1)
-5) log(n) + 1				// O(log(n))
+1) 5 + n 			// O(N)
+2) n + n^2			// O(n^2)
+3) 15n + 13n			// O(n)
+4) 10000			// O(1)
+5) log(n) + 1			// O(log(n))
 6) log(n) * 3 + 14n + 3		// O(n)
-7) nlog(n) + 3n^2			// O(n^2)
-8) n^3 + log(n^4)			// O(n^3)
-9) n! + 180000n^2 			// O(n!)
+7) nlog(n) + 3n^2		// O(n^2)
+8) n^3 + log(n^4)		// O(n^3)
+9) n! + 180000n^2 		// O(n!)
 10) 300n^5 + 15002^n + 3n	// O(15002^n)
 ```

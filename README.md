@@ -1,15 +1,15 @@
 # Intro to Algorithms
 
 ## Purpose
-The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who do not have not taken an introductory algorithms course or need a refresher on basic algorithm design. 
+The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who do not have not taken an introductory algorithms course or need a refresher on basic algorithm design.
 
 *In addition, this guide will also prepare developers for the [Outco program](http://outco.io) and their admissions fundamentals check.*
 
 ## Commitment and Requirements
-This guide can take between **25-100 hours** to complete depending on your exposure to algorithms.  Please allow for ample time to practice up to **2-4 weeks** to allow the concepts to be internalized. It is best to follow through with the recommended structure in the order given. 
+This guide can take between **25-100 hours** to complete depending on your exposure to algorithms.  Please allow for ample time to practice up to **2-4 weeks** to allow the concepts to be internalized. It is best to follow through with the recommended structure in the order given.
 
-**Minimum Requirements**: 
- 
+**Minimum Requirements**:
+
 * Fluency in a programming language (e.g., Java, JavaScript, Python, Ruby, PHP, Objective-C, C++, C)
 * Strong knowledge of looping constructs like `for` and `while` loops.
 * Strong knowledge of control flow `if`, `else`, `and`, `or`
@@ -63,17 +63,17 @@ Before we dive further into how to analyze for Big-O, let's focus on the input f
 ### 1a. Determining What is Scaling
 When you are trying to access the time or space complexity of an algorithm, always ask yourself: *what about my input is scaling?*
 
---- 
+---
 
 **Q:** For the following code below, what is scaling?
 
 ```javascript
 
-// Take in an integer and print its value 
+// Take in an integer and print its value
 function printInteger(num) {
 	console.log(num);
 }
- 
+
 ```
 
 **A:** If your answer was the **value** of ```num``` then you are correct. We would be scaling the value of ```num``` itself.  
@@ -89,7 +89,7 @@ Let's try another problem:
 function printFirst(arr) {
 	console.log(arr[0]);
 }
- 
+
 ```
 
 A: In this case, it's the **length of the array**. If you are given an array as an input, it usually is the length of the array.
@@ -102,12 +102,12 @@ It can get tricky with different types of inputs. Here are some of the input typ
 |---			|---|
 | Integer		| Magnitude of number|
 | String		| Length of String|
-| Array		| Length of Array| 
-| LinkedList	| Number of nodes| 
-| Tree			| Number of nodes| 
-| Hashtable	| Number of key-value pairs| 
+| Array		| Length of Array|
+| LinkedList	| Number of nodes|
+| Tree			| Number of nodes|
+| Hashtable	| Number of key-value pairs|
 | Matrix		| Width and height of matrix|
-| Graph 		| Number of vertices and edges| 
+| Graph 		| Number of vertices and edges|
 
 *Disclaimer: These are 'common' factors that scale.  Sometimes with particular problems there might be less obvious factors that scale.*
 
@@ -133,9 +133,9 @@ To help you begin to analyze for complexity you need to get a sense of what a un
 
 ### 1c. Analyze Line by Line
 
-When you are starting out, try evaluating the complexity line by line and determine the complexity for each line.  Then sum up the complexity of each line to get the total. 
+When you are starting out, try evaluating the complexity line by line and determine the complexity for each line.  Then sum up the complexity of each line to get the total.
 
-Lets start with time complexity for now. 
+Lets start with time complexity for now.
 
 ---
 **Q:** Answer these two questions for the code below:
@@ -161,7 +161,7 @@ Here is how we could mark the computations line by line:
 ```javascript
 // print the first and last item in the array
 function printFirstLast(arr) {
-	console.log(arr[0]); // 2 
+	console.log(arr[0]); // 2
 	console.log(arr[arr.length-1]); // 4
 }
 
@@ -185,10 +185,10 @@ This is because for Big-O analysis we only care about the largest order of magni
 **Q:** For the previous example, we determined the algorithm has 6 operations. Reduce it using the two conditions above.
 
 **A:**
-1. 6 is the lowest (and only term) 
-2. 6 itself is a coefficient of the constant term, thus it gets reduced to 1. 
+1. 6 is the lowest (and only term)
+2. 6 itself is a coefficient of the constant term, thus it gets reduced to 1.
 
-So the time complexity for the function above is **O(1) or constant time**. 
+So the time complexity for the function above is **O(1) or constant time**.
 
 ---
 
@@ -207,7 +207,7 @@ Reduce each of the following to its Big-O magnitude:
 6) log(N) * 3 + 14N + 3
 7) Nlog(N) + 3N^2
 8) N^3 + log(N^4)
-9) N! + 180000N^2 
+9) N! + 180000N^2
 10) 300N^5 + 15002^N + 3N
 ```
 
@@ -229,7 +229,7 @@ function printAll(arr) {
 ```
 
 **A:**
-You may have guessed that it is **linear** time or **O(N)**. And yes, that would be correct. 
+You may have guessed that it is **linear** time or **O(N)**. And yes, that would be correct.
 
 ---
 
@@ -245,7 +245,7 @@ function printAll(arr) {
 	}
 }
 
-// total = 1 + N * (2 + 2) = 4N + 1 
+// total = 1 + N * (2 + 2) = 4N + 1
 // reduce down to O(N) or linear time complexity
 ```
 
@@ -260,13 +260,13 @@ function printAll(arr) {
 function firstTen(arr) {
 	let i = 0;
 	while(i < 10 && i < arr.length) {
-		console.log(arr[10]); 
+		console.log(arr[10]);
 		i++;
 	}
 }
 ```
 
-**A:** Lets explore the code line by line, keep in mind we have 
+**A:** Lets explore the code line by line, keep in mind we have
 
 
 ```javascript
@@ -280,7 +280,7 @@ function firstTen(arr) {
 	}
 }
 
-// total = 1 + 10 * (4 + 2 + 1) = 71 
+// total = 1 + 10 * (4 + 2 + 1) = 71
 // reduce down to O(1) or constant time complexity
 ```
 ---
@@ -293,11 +293,12 @@ function firstTen(arr) {
 function afterTen(arr) {
 	let i = 11;
 	while(i < arr.length) {
-		console.log(arr[i]); 
+		console.log(arr[i]);
 		i++;
 	}
 }
 ```
+
 **A:** Let's explore the code line by line, keep in mind we have:
 
 
@@ -321,9 +322,9 @@ Notice how when the problem prints from index 11 to the end of the array. When t
 ---
 ### 1f. Analyze by Chunks
 
-Analyzing line by line is good for when you are starting out. But you may quickly learn that it isn't always necessary. We did a lot of work to compute the exact number of operations only to reduce it back down. 
+Analyzing line by line is good for when you are starting out. But you may quickly learn that it isn't always necessary. We did a lot of work to compute the exact number of operations only to reduce it back down.
 
-Knowing that lower order terms and coefficients will get dropped anyway, you can speed up your analysis by looking at **chunks** of code at a time, and evaluating based on **magnitude**. 
+Knowing that lower order terms and coefficients will get dropped anyway, you can speed up your analysis by looking at **chunks** of code at a time, and evaluating based on **magnitude**.
 
 Let's try this out on a few problems.
 
@@ -342,6 +343,7 @@ function evens(arr){
 	return result;
 }
 ```
+
 **A:** Let's separate this into chunks and use magnitudes. 
 
 ```javascript
@@ -349,7 +351,7 @@ function evens(arr){
 function evens(arr){
 	let results = [];						// constant
 	for(let i = 0; i < arr.length; i++) {	// linear
-		if(arr[i] % 2 === 0) {					// constant 
+		if(arr[i] % 2 === 0) {					// constant
 			results.push(arr[i]);		
 		}
 	return result;							// constant
@@ -432,23 +434,23 @@ Based on your language, the collection will be in this format:
 JavaScript: Array
 Java: ArrayList
 Python: List
-Ruby: Array 
+Ruby: Array
 Other: Dynamic Array
 
-1) indexOf: given a collection and a target value, return the index in 
+1) indexOf: given a collection and a target value, return the index in
 which the value at the index matches the target value. If there is no
 match, return -1.
 
-2) evens: given a collection of integers, return only the even 
+2) evens: given a collection of integers, return only the even
 values in a new copy of the collection
 
-3) split: given a string of characters, return a collection with 
+3) split: given a string of characters, return a collection with
 each character separated into its own separate item.
 
 4) sum: given a collection of integers, return the sum of them
 
 ```
-***Solutions are Under construction*** 
+***Solutions are Under construction***
 
 ### 1i. Understand Complexity of Data Structure Methods
 
@@ -468,19 +470,19 @@ Below are some common examples of algorithms and patterns that lead to different
 |---|---|
 |Constant: O(1)| Array access, arithmetic operators|
 |Logarithmic: O(log(N))| Binary search, binary search tree retrieval/insertion (balanced)|
-|Linear: O(N)| Looping through an array or hashtable| 
-|Quasilinear: O(Nlog(N))| Quicksort, mergesort, heapsort| 
-|Quadratic: O(N^2)| Nested loops | 
+|Linear: O(N)| Looping through an array or hashtable|
+|Quasilinear: O(Nlog(N))| Quicksort, mergesort, heapsort|
+|Quadratic: O(N^2)| Nested loops |
 |Polynomial: O(N^C)| Deeply nested loops|
-|Exponential: O(C^N)| Multiple-recursion | 
+|Exponential: O(C^N)| Multiple-recursion |
 |Factorial: O(!N)| Permutations |
 
 
 ### 1j. Leveling Up on Complexity Analysis
 
-Learn more by doing. Work to analyze problems and evaluate the code you have written out. Go through these two tutorials to get more practice on some problems. Furthermore, from now on, every algorithm you write should be analyzed for complexity.
+Learn more by doing. Work to analyze problems and evaluate the code you have written out. Go through these three tutorials to get more practice on some problems. Furthermore, from now on, every algorithm you write should be analyzed for complexity.
 
-1. [Asymptotic Notation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation) by Khan Academy 
+1. [Asymptotic Notation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation) by Khan Academy
 
 2. [Intro to Big-O Notation](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals/introduction-to-big-o-notation) by Rithm School
 
@@ -497,7 +499,7 @@ The basic list of algorithm patterns will help you progress throughout the first
 
 * **Multiple Pointers:** Looping and using multiple pointers that start at different positions and sometimes travel at different speeds are important to ensure you can strengthen your looping game.
 	* [Outco - Reading on Multiple Pointers](http://class.outco.io/courses/technical/lectures/1950839)
-	
+
 * **Frequency Count:** Learn to use hashtables to shave down time complexity on a lot of problems.  One class of problems involve knowing/tracking counts.
 	* [Outco - Reading on Frequency Count](http://class.outco.io/courses/technical/lectures/2025015)
 * **Decrease and Conquer:** Its cousin to the more popular Divide and Conquer algorithm, these class of problems are important because they can be solved easily without recursion. It uses a single subproblem which can be solved with a while loop.  As we begin on recursion later, converting these decrease and conquer problems to single recursion problems will help strengthen your understanding of recursion.
@@ -513,7 +515,7 @@ The basic list of algorithm patterns will help you progress throughout the first
 
 * **Recursion** Finally, getting to recursion which can be a tough hump to get over for thosejust starting out.  We recommend using the Helper Method Recursion pattern which uses a helper method to actually do the recursion. One way to start is to replace simple loops with recursion. We will be posting simpler problems for you to start off soon.
 	* [Khan Academy - Recursive Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/p/challenge-recursive-powers)
-	* [Eloquent JavaScript - Recursion Section](http://eloquentjavascript.net/03_functions.html) 
+	* [Eloquent JavaScript - Recursion Section](http://eloquentjavascript.net/03_functions.html)
 	* [Rithm School - Intro to Recursion](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals/introduction-to-recursion)
 
 ***Under Construction***
@@ -545,7 +547,7 @@ These are challenges that having a more structured process for problem solving w
 
  1. you properly understand the problem
  2. you are able to vocalize and visualize your code and talk over solutions at a high level
- 3. you can analyze your solution to determine the validity of your algorithm 
+ 3. you can analyze your solution to determine the validity of your algorithm
  4. you are able to translate your algorithm into code you can verify
 
 Here is an example framework which you can adopt and modify as needed to fit your style of problem solving:
@@ -585,7 +587,7 @@ Practice easy level algorithms to get into the groove of things. Remember the st
 * [Leetcode](https://leetcode.com/problemset/algorithms/) - Do Easy Problems with Over 55% Acceptance Rate
 * [Codewars](https://www.codewars.com/) -  Kata 7-8 problems
 * [Coderbyte](https://coderbyte.com/challenges#easyChals) - 10 Easy problems
-* 
+*
 
 *After completing these problems, you should have a good shot at passing Outco's fundamentals check. If you are looking to apply/re-apply please reach out to the [Outco Outreach team](https://outco.io).*
 
@@ -615,7 +617,7 @@ If you want to progress more, then these concepts are what you should tackle nex
 * Graphs
 	* [Khan Academy - Graphs](https://www.khanacademy.org/computing/computer-science/algorithms#graph-representation)
 
-### Practice 
+### Practice
 Do at the minimum 20 problems of the level of difficulty listed here:
 
 * [Leetcode - Do Problems 45-55% Acceptance Rate](https://leetcode.com/problemset/algorithms/)
@@ -624,7 +626,7 @@ Do at the minimum 20 problems of the level of difficulty listed here:
 
 ## 7. Track and Measure
 
-If you are interviewing, you need to evaluate your ability to solve algorithms under  a set amount of time and possibly with someone on the other end. Get yourself into to pressure setting that interviews by doing mock interviews. 
+If you are interviewing, you need to evaluate your ability to solve algorithms under  a set amount of time and possibly with someone on the other end. Get yourself into to pressure setting that interviews by doing mock interviews.
 
 Here are a few resources that you can use to test yourself:
 
@@ -646,7 +648,7 @@ Reduce the following to it Big-O magnitude:
 
 1) 5 + n 					// O(N)
 2) n + n^2					// O(n^2)
-3) 15n + 13n				// O(n) 
+3) 15n + 13n				// O(n)
 4) 10000					// O(1)
 5) log(n) + 1				// O(log(n))
 6) log(n) * 3 + 14n + 3		// O(n)

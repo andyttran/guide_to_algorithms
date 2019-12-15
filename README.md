@@ -4,10 +4,8 @@
 
 The main goal of this guide is to get developers started with algorithms.  This guide will serve as a roadmap for developers who have not taken an introductory algorithms course or need a refresher on basic algorithm design. 
 
-*In addition, this guide will also prepare developers for the [Outco program](http://outco.io) and their admissions fundamentals check.*
-
 ## Commitment and Requirements
-This guide can take between **25-100 hours** to complete depending on your exposure to algorithms.  Please allow for ample time to practice up to **2-4 weeks** to allow the concepts to be internalized. It is best to follow through with the recommended structure in the order given.
+This guide can take **up to 25 hours** to complete depending on your exposure to algorithms.  Please allow for ample time to practice up to **2-4 weeks** to allow the concepts to be internalized. It is best to follow through with the recommended structure in the order given.
 
 **Minimum Requirements**:
  
@@ -591,9 +589,6 @@ Practice easy level algorithms to get into the groove of things. Remember the st
 * [Leetcode](https://leetcode.com/problemset/algorithms/) - Do Easy Problems with Over 55% Acceptance Rate
 * [Codewars](https://www.codewars.com/) -  Kata 7-8 problems
 * [Coderbyte](https://coderbyte.com/challenges#easyChals) - 10 Easy problems
-*
-
-*After completing these problems, you should have a good shot at passing Outco's fundamentals check. If you are looking to apply/re-apply please reach out to the [Outco Outreach team](https://outco.io).*
 
 ## 6. Progress to Intermediate Concepts
 
